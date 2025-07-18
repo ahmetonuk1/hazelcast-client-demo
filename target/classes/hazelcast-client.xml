@@ -1,0 +1,16 @@
+<!-- hazelcast-client.xml -->
+<hazelcast-client xmlns="http://www.hazelcast.com/schema/client-config"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://www.hazelcast.com/schema/client-config
+                  https://www.hazelcast.com/schema/client-config/hazelcast-client-config-5.3.xsd">
+
+    <network>
+        <cluster-members>
+            <address>10.132.0.6:5701</address>
+        </cluster-members>
+    </network>
+
+    <properties>
+        <property name="hazelcast.logging.type">slf4j</property>
+    </properties>
+</hazelcast-client>
