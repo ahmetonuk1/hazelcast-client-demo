@@ -1,6 +1,8 @@
-package org.i2i.kotam.utils.constants;
+package org.i2i.hazelcast.utils.constants;
 
 public class StringConstants {
-    public static final String HAZELCAST_IP = "34.140.179.239"; // örnek IP
-    public static final String MAP_NAME = "usage-data-map";
+
+    // Hazelcast Sunucusunun IP Adresi ve Portu
+    public static String hazelcastUrl = "34.140.179.239:5701";
+    public static String mapName = "kotam";
 }

@@ -1,14 +1,21 @@
 package org.i2i.kotam;
+import com.hazelcast.client.HazelcastClient;
+import com.hazelcast.client.config.ClientConfig;
+import com.hazelcast.core.HazelcastInstance;
+import org.i2i.hazelcast.utils.configurations.Configuration;
+
+
 
 public class HazelcastManager {
+    private static final ClientConfig config = Configuration.getConfig();
+    private static final HazelcastInstance hazelcast = HazelcastClient.newHazelcastClient(config);
 
-    public static void main(String[] args) {
-        // TGF operasyonu: Hazelcast'e veri yaz
-        HazelcastTGFOperation tgfOperation = new HazelcastTGFOperation();
-        tgfOperation.writeSampleData();
+    public static HazelcastInstance getInstance() {
+        return hazelcast;
+    }
 
-        // AOM operasyonu: Hazelcast'ten verileri oku
-        HazelcastMWOperation mwOperation = new HazelcastMWOperation();
-        mwOperation.readAndPrintAllUsageData();
+    public static void shutdown() {
+        hazelcast.shutdown();
     }
 }
+
