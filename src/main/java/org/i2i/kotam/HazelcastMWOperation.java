@@ -1,4 +1,4 @@
-package org.i2i.hazelcast.utils;
+package org.i2i.kotam;
 
 import com.hazelcast.client.HazelcastClient;
 import com.hazelcast.client.config.ClientConfig;

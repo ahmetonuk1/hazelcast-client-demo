@@ -2,7 +2,7 @@ package org.i2i.kotam;
 import com.hazelcast.client.HazelcastClient;
 import com.hazelcast.client.config.ClientConfig;
 import com.hazelcast.core.HazelcastInstance;
-import org.i2i.hazelcast.utils.configurations.Configuration;
+import org.i2i.kotam.utils.configurations.Configuration;
 
 
 

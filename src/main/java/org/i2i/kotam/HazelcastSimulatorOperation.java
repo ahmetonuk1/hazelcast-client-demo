@@ -4,8 +4,8 @@ import com.hazelcast.client.HazelcastClient;
 import com.hazelcast.client.config.ClientConfig;
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.map.IMap;
-import org.i2i.hazelcast.utils.configurations.Configuration;
-import org.i2i.hazelcast.utils.constants.StringConstants;
+import org.i2i.kotam.utils.configurations.Configuration;
+import org.i2i.kotam.utils.constants.StringConstants;
 
 import java.util.Collection;
 
