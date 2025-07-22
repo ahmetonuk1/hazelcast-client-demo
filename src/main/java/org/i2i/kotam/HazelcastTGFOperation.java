@@ -15,6 +15,10 @@ public class HazelcastTGFOperation {
     private static final ClientConfig config = Configuration.getConfig();
     private static final HazelcastInstance hazelcast = HazelcastClient.newHazelcastClient(config);
 
+    public static HazelcastInstance getInstance() {
+        return hazelcast;
+    }
+
     public static String getAllMsisdn(String key) {
         try {
             IMap<Object, Object> map = hazelcast.getMap(StringConstants.mapName);
